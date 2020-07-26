@@ -1,0 +1,541 @@
+body {
+
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #212121;
+}
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+.ul-padding-non{    
+    padding-inline-start: 0;
+    padding: 0;
+    margin-top: 0;
+}
+.current{
+    color: #2196F3;
+}
+.link{
+    text-decoration: none;
+}
+.list{
+    list-style: none;
+}
+.container{
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* шапка сайта*/
+
+.logo{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
+    padding-top: 24px;
+}
+.logo-web{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+.logo{
+    margin-right: 85px;
+}
+.nav-list-link{
+    font-style: normal;
+    font-weight: 500;
+    line-height: 0.87;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+.nav-list-item .nav-list-link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.nav-list-link:hover,
+.nav-list-link:focus{
+    color: #2196F3
+}
+.current{
+    color: #2196F3;
+}
+.nav-element{
+    display: flex;
+    padding-inline-start: 0;
+    margin-bottom: 0;
+
+}
+.nav-element li:not(:last-child){
+    margin-right: 50px;
+}
+.header-adress a:not(:last-child){
+    margin-right: 30px;
+}
+.header-adress{
+    margin-left: 331px;
+}
+.main-nav{
+    display: flex;
+    align-items: baseline;
+
+
+}
+
+.header-mail{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+.header-tel{
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+
+}
+.header-mail:hover,
+.header-mail:focus,
+.header-tel:hover,
+.header-tel:focus{
+    color: #2196F3
+}
+/*Титульная*/
+
+.title-name{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #df924bb9;
+    padding-top: 200px;
+    margin-top: 0;
+}
+.hero-section{
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 200px;
+}
+
+.modal-btn{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    background-color:#2196F3;
+}
+.modal-btn1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.modal-btn:hover,
+.modal-btn:focus{
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+/* О Нас */
+.about-us{
+    padding-bottom: 94px;
+}
+.block-container{
+    width: 270px;
+    height: 120px;
+    left: 215px;
+    top: 774px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.sucsses-company li:not(:last-child){
+    margin-right: 30px;
+    margin-bottom: 0;
+}
+
+.sucsses-company{
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.sucsses-company-list-title{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.sucsses-company-list-title-p{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/*Чем мы занимаемся*/
+.we-do{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+.we-do-list-item-h3{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #0e0d0d;
+    margin-top: 27px;
+    margin-bottom: 27px;
+}
+.we-do-list{
+    display: flex;
+    padding-bottom: 94px;
+    justify-content: center;
+    margin: 0;
+}
+.we-do-list li:not(:last-child){
+    margin-right: 30px;
+
+}
+/*Наша команда*/
+.team-item-list{
+    display: flex; 
+    justify-content: center;
+}
+.team-item-list li{
+    display: block;
+    width: 44px;
+    height: 44px;
+    background-color: crimson;
+}
+.team-item{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 94px;
+    margin: 0;
+}
+.team-item li:not(:last-child){
+    margin-right: 10px;
+}
+.team-item-list-first{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 24px;
+}
+.team-section{
+    background: #F5F4FA;
+}
+.team-title{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    margin-top: 0;
+    padding-top: 94px;
+}
+.team-title-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0;
+    margin-bottom: 10px;
+
+}
+.team-photo{
+    margin-bottom: 30px;
+}
+.team-title-p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin: 0;
+    margin-bottom: 16px;
+}
+/*Постояные клиенты*/
+.clients-section{
+    
+}
+.clients-section-div{
+    padding-bottom: 94px;
+}
+.clients-title{
+    margin-top: 0;
+}
+.clients-title-item{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+.clients-title-item a{
+    display: block;
+}
+.clients-title-item li:not(:last-child){
+    margin-right: 30px;
+
+}
+.clients-title-item li{
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+}
+.clients-title{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    padding-top: 94px;
+}
+/*footer*/
+.footer-list-div{
+    display: flex;
+}
+.footer-list{
+    background: #2F303A;
+}
+.footer-div {
+    align-items: baseline;
+    justify-content: flex-start
+}
+.footer-logo-web{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+.footer-logo{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    display: block;
+    padding-top: 60px;
+    margin-bottom: 20px;
+}
+.footer-adress-item{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
+    margin-bottom: 9px;
+}
+.footer-adress-item3{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
+}
+
+
+
+.footer-adress-item1{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    display: block;
+    margin-bottom: 9px;
+}
+.connected{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    padding-top: 72px;
+    margin-top: 0;
+    text-align: left;
+}
+.connected-list li{
+    width: 44px;
+    height: 44px;
+    background-color: red;
+    
+}
+.connected-list li:not(:last-child){
+    margin-right: 10px;
+}
+.connected-list{
+    display: flex;
+    margin: 0;
+}
+.connected-div{
+    display: inline-block;
+    text-align: center;
+    margin-left: 69px;
+    padding-bottom: 100px;
+}
+.connect-container{
+    display: flex;
+}
+.footer-adress-list{
+    padding-bottom: 60px;
+    margin: 0;
+}
+/* portfolio.html*/
+/* фильтр услуг*/
+.filter-item{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 94px;
+}
+.filter-item li:not(:last-child){
+    margin-right: 8px;
+}
+.filter-list{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+.filter-list-btn{
+    font-weight: 500;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.filter-list-btn:hover,
+.filter-list-btn:focus{
+    background-color: #2196F3;
+    color: #ffffff;
+}
+/*список услуг*/
+.services-a{
+
+}
+.services-list-item img{
+    margin-bottom: 20px;
+}
+.services-list-item{
+    width: 370px;
+    height: 404px;
+    left: 615px;
+    top: 262px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.filter-item{
+    margin-bottom: 50px;
+}
+.services-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0;
+    padding-bottom: 94px;
+
+}
+.services-list li:nth-last-child(-n + 3){
+    margin-bottom: 0;
+}
+.services-list li{
+    margin-right: 30px;
+}
+.services-list li:nth-child(3n) {
+    margin-right: 0;
+}
+.services-list li::nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+.services-list-title{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 0.05;
+    letter-spacing: 0.06em;
+    color: #212121;
+    
+}
+.services-list-title-p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin: 0;
+    padding-top: 4px;
+    padding-bottom: 20px;
+}
+.services-text{
+padding-left: 24px;
+padding-right: 24px;
+}
