@@ -7,6 +7,8 @@ body {
 }
 html {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   
   *,
@@ -17,7 +19,6 @@ html {
 .ul-padding-non{    
     padding-inline-start: 0;
     padding: 0;
-    margin-top: 0;
 }
 .current{
     color: #2196F3;
@@ -29,7 +30,7 @@ html {
     list-style: none;
 }
 .container{
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -45,7 +46,7 @@ html {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #000000;
-    padding-top: 24px;
+    padding-top: 23px;
 }
 .logo-web{
     font-family: Raleway;
@@ -82,6 +83,7 @@ html {
     display: flex;
     padding-inline-start: 0;
     margin-bottom: 0;
+    margin-top: 0;
 
 }
 .nav-element li:not(:last-child){
@@ -91,7 +93,8 @@ html {
     margin-right: 30px;
 }
 .header-adress{
-    margin-left: 331px;
+    margin-left: 301px;
+    display: flex;
 }
 .main-nav{
     display: flex;
@@ -133,13 +136,17 @@ html {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #df924bb9;
-    padding-top: 200px;
     margin-top: 0;
+    color: #FFFFFF;
 }
 .hero-section{
     text-align: center;
     justify-content: center;
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero-img/header.jpg);
+    background-repeat: no-repeat;
+}
+.hero-section-div{
+    padding-top: 200px;
     padding-bottom: 200px;
 }
 
@@ -154,11 +161,18 @@ html {
     letter-spacing: 0.06em;
     color: #ffffff;
     background-color:#2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 .modal-btn1{
     display: block;
     margin-left: auto;
     margin-right: auto; 
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0;
 }
 
 .modal-btn:hover,
@@ -167,28 +181,28 @@ html {
     color: #FFFFFF;
 }
 /* О Нас */
-.about-us{
+.about-us-div{
     padding-bottom: 94px;
+    padding-top: 94px;
 }
 .block-container{
+    display: flex;
     width: 270px;
     height: 120px;
-    left: 215px;
-    top: 774px;
     background: #F5F4FA;
     border-radius: 4px;
-    margin: 0;
     margin-bottom: 30px;
-}
-.sucsses-company li:not(:last-child){
+    justify-content: center;
+    align-items: center;
+}   
+.sucsses-company-list:not(:last-child){
     margin-right: 30px;
     margin-bottom: 0;
 }
 
 .sucsses-company{
     display: flex;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 .sucsses-company-list-title{
     font-weight: bold;
@@ -210,6 +224,9 @@ html {
     margin-bottom: 0;
 }
 /*Чем мы занимаемся*/
+.we-do-list-item img{
+    display: block;
+}
 .we-do{
     font-weight: bold;
     font-size: 36px;
@@ -220,6 +237,10 @@ html {
     margin-bottom: 50px;
     margin-top: 0;
 }
+.what-we-do-div{
+    width: 1200px;
+    padding-bottom: 94px;
+}
 .we-do-list-item-h3{
     font-weight: bold;
     font-size: 14px;
@@ -228,14 +249,14 @@ html {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #0e0d0d;
-    margin-top: 27px;
-    margin-bottom: 27px;
+    margin: 0;
+    padding: 27px 27px;
+    
 }
 .we-do-list{
     display: flex;
-    padding-bottom: 94px;
     justify-content: center;
-    margin: 0;
+    margin: auto;
 }
 .we-do-list li:not(:last-child){
     margin-right: 30px;
@@ -243,32 +264,65 @@ html {
 }
 /*Наша команда*/
 .team-item-list{
+    display: flex;
+    justify-content: space-between;
+    max-width: 206px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex; 
     justify-content: center;
-}
-.team-item-list li{
-    display: block;
-    width: 44px;
-    height: 44px;
-    background-color: crimson;
+    padding-bottom: 24px;
 }
 .team-item{
     display: flex;
-    justify-content: center;
-    padding-bottom: 94px;
     margin: 0;
 }
-.team-item li:not(:last-child){
+.team-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.team-link-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.team-item-svg{
+    width: 20px;
+    height: 20px;
+}
+.team-item-list li:not(:last-child){
     margin-right: 10px;
+   
 }
 .team-item-list-first{
+    width: 270px;
     background: #FFFFFF;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 0px 0px 4px 4px;
-    padding-bottom: 24px;
+    
+}
+.team-item-list-first:not(:last-child){
+    margin-right: 30px;
+}
+.team-item-list-first img{
+    display: block;
 }
 .team-section{
     background: #F5F4FA;
+}
+.team-section-div{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .team-title{
     font-weight: bold;
@@ -278,7 +332,6 @@ html {
     letter-spacing: 0.03em;
     margin-bottom: 50px;
     margin-top: 0;
-    padding-top: 94px;
 }
 .team-title-name{
     font-weight: 500;
@@ -304,11 +357,9 @@ html {
     margin-bottom: 16px;
 }
 /*Постояные клиенты*/
-.clients-section{
-    
-}
 .clients-section-div{
     padding-bottom: 94px;
+    padding-top: 94px;
 }
 .clients-title{
     margin-top: 0;
@@ -317,6 +368,9 @@ html {
     display: flex;
     justify-content: center;
     margin-bottom: 0;
+}
+.clients-title-item img{
+    display: block;
 }
 .clients-title-item a{
     display: block;
@@ -332,6 +386,11 @@ html {
     border-radius: 4px;
 
 }
+.clients-title-item-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .clients-title{
     font-weight: bold;
     font-size: 36px;
@@ -339,7 +398,6 @@ html {
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
-    padding-top: 94px;
 }
 /*footer*/
 .footer-list-div{
@@ -417,12 +475,7 @@ html {
     margin-top: 0;
     text-align: left;
 }
-.connected-list li{
-    width: 44px;
-    height: 44px;
-    background-color: red;
-    
-}
+
 .connected-list li:not(:last-child){
     margin-right: 10px;
 }
@@ -450,7 +503,7 @@ html {
     justify-content: center;
     margin: 0;
     padding: 0;
-    padding-top: 94px;
+    margin-bottom: 50px;
 }
 .filter-item li:not(:last-child){
     margin-right: 8px;
@@ -463,14 +516,21 @@ html {
     letter-spacing: 0.03em;
     color: #212121;
     background: #F5F4FA;
-    border-radius: 4px;
+    
 }
 .filter-list-btn{
+    font-size: 16px;
+    line-height: 0.61;
+    text-align: center;
+    letter-spacing: 0.03em;
+    height: 38px;
     font-weight: 500;
     padding-left: 22px;
     padding-right: 22px;
     padding-top: 6px;
     padding-bottom: 6px;
+    border: 0;
+    border-radius: 4px;
 }
 .filter-list-btn:hover,
 .filter-list-btn:focus{
@@ -478,32 +538,26 @@ html {
     color: #ffffff;
 }
 /*список услуг*/
-.services-a{
-
+.services-a img{
+    display: block;
+    width: 369px;
 }
-.services-list-item img{
-    margin-bottom: 20px;
+.filter-section-div{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .services-list-item{
     width: 370px;
-    height: 404px;
-    left: 615px;
-    top: 262px;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
     margin-bottom: 30px;
 }
-.filter-item{
-    margin-bottom: 50px;
-}
 .services-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 0;
-    padding-bottom: 94px;
-
+    margin: 0;
 }
 .services-list li:nth-last-child(-n + 3){
     margin-bottom: 0;
@@ -520,9 +574,11 @@ html {
 .services-list-title{
     font-weight: bold;
     font-size: 18px;
-    line-height: 0.05;
+    line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
+    margin: 0;
+    margin-bottom: 20px;
     
 }
 .services-list-title-p{
@@ -532,10 +588,19 @@ html {
     letter-spacing: 0.03em;
     color: #757575;
     margin: 0;
-    padding-top: 4px;
-    padding-bottom: 20px;
 }
 .services-text{
-padding-left: 24px;
-padding-right: 24px;
+padding: 20px 20px 24px 24px;
+}
+/* спрайты */
+.header-mail{
+    display: flex;
+    align-items: center;
+    
+}
+.header-icon{
+    width: 16px;
+    height: 11px;
+    margin-right: 10px;
+    
 }
