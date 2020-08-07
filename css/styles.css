@@ -67,7 +67,7 @@ html {
     letter-spacing: 0.02em;
     color: #212121;
 }
-.nav-list-link::after{
+.current2::after{
     display: block;
     width: 100%;
     height: 4px;
