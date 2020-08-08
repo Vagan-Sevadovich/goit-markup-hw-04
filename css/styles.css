@@ -429,7 +429,7 @@ html {
 .clients-title-item{
     display: flex;
     justify-content: center;
-    margin-bottom: 0;
+    margin: 0;
 }
 .clients-title-item img{
     display: block;
@@ -618,7 +618,7 @@ html {
 /*список услуг*/
 .services-a img{
     display: block;
-    width: 369px;
+    width: 370px;
 }
 .filter-section-div{
     padding-top: 94px;
@@ -627,9 +627,11 @@ html {
 .services-list-item{
     width: 370px;
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
-    box-sizing: border-box;
     margin-bottom: 30px;
+}
+.services-list-item:hover,
+.services-list-item:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .services-list{
     display: flex;
@@ -668,10 +670,11 @@ html {
     margin: 0;
 }
 .services-text{
-padding: 20px 20px 24px 24px;
+    box-sizing: border-box;
+    padding: 20px 20px 24px 24px;
+    border: 1px solid #EEEEEE;
+    width: 370px;
 }
-.services-list-item:hover,
-.services-list-item:focus{
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
+
 /* спрайты */
