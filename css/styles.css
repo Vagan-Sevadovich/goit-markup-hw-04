@@ -507,8 +507,11 @@ html {
     background: #2F303A;
 }
 .footer-div {
+    padding-top: 60px;
+    padding-bottom: 60px;
     align-items: baseline;
     justify-content: flex-start
+    
 }
 .footer-logo-web{
     font-family: Raleway;
@@ -528,7 +531,6 @@ html {
     letter-spacing: 0.03em;
     color: #FFFFFF;
     display: block;
-    padding-top: 60px;
     margin-bottom: 20px;
 }
 .footer-adress-item{
@@ -571,7 +573,6 @@ html {
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
-    padding-top: 72px;
     margin-top: 0;
     text-align: left;
 }
@@ -587,13 +588,13 @@ html {
     display: inline-block;
     text-align: center;
     margin-left: 69px;
+    padding-top: 72px;
     padding-bottom: 100px;
 }
 .connect-container{
     display: flex;
 }
 .footer-adress-list{
-    padding-bottom: 60px;
     margin: 0;
 }
 /* portfolio.html*/
@@ -689,8 +690,11 @@ html {
     background: #FFFFFF;
     margin-bottom: 30px;
 }
-.services-list-item:hover,
-.services-list-item:focus {
+.services-a{
+    display: inline-block;
+}
+.services-a:hover,
+.services-a:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
