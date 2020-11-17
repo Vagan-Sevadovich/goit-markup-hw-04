@@ -104,7 +104,7 @@ html {
     margin-right: 30px;
 }
 .header-adress{
-    margin-left: 301px;
+    margin-left: 305px;
     display: flex;
 }
 .header-border{
@@ -155,13 +155,15 @@ html {
 }
 .header-icon{
     width: 16px;
-    height: 11px;
+    height: 12px;
     margin-right: 10px;
+    color: #757575;
 }
 .header-icon2{
-    width: 12px;
-    height: 15px;
+    width: 10px;
+    height: 16px;
     margin-right: 10px;
+    color: #757575;
 }
 /*Титульная*/
 
